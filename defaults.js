@@ -12,6 +12,7 @@ const defaultParams = {
 	'-c': '2048',
 	'--seed': '-1',
 	'--repeat_penalty': '1.1764705882352942',
+	'--gpu-layers': '30',
 };
 
 const defaultGgmlParams = {

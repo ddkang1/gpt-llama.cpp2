@@ -7,7 +7,7 @@ services:
     ports:
       - 3000:3000
     environment:
-      - 'OPENAI_API_KEY=../llama.cpp/models/Wizard-Vicuna-13B-Uncensored.ggml.q5_1.bin'
+      - 'OPENAI_API_KEY=../llama.cpp/models/WizardLM-7B-uncensored.ggml.q5_1.bin'
       - 'OPENAI_API_HOST=http://10.130.51.75:8080' #host IP address
 
   # frontend:
