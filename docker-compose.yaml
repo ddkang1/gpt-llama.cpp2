@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+
+  chatgpt:
+    image: 522185657747.dkr.ecr.us-west-2.amazonaws.com/chatbot-ui
+    ports:
+      - 3000:3000
+    environment:
+      - 'OPENAI_API_KEY=../llama.cpp/models/Wizard-Vicuna-13B-Uncensored.ggml.q5_1.bin'
+      - 'OPENAI_API_HOST=http://10.130.51.75:8080' #host IP address
+
+  # frontend:
+  #   image: quay.io/go-skynet/localai-frontend:master
+  #   ports:
+  #     - 3000:3000
